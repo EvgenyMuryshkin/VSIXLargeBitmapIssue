@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidVSIXLargeBitmapIssuePackage">
+
+    <Groups>
+      <Group guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="MyMenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS"/>
+      </Group>
+
+      <Group guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="ToolbarGroup" priority="0x0600">
+        <Parent guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="Toolbar"/>
+      </Group>
+      
+    </Groups>
+
+    <Menus>
+      <Menu guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="Toolbar" type="Toolbar">
+        <CommandFlag>DefaultDocked</CommandFlag>
+        <Strings>
+          <ButtonText>Bitmap Issue Toolbar</ButtonText>
+          <CommandName>Bitmap Issue Toolbar</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Buttons>
+      <Button guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="ToolbarCommandId" priority="0x0100" type="Button">
+        <Parent guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guid_VSCodeIcons_255" id="VscAccount" />
+        <Strings>
+          <ButtonText>Invoke ToolbarCommand 1</ButtonText>
+        </Strings>
+      </Button>
+    
+      <Button guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="ToolbarCommandId2" priority="0x0101" type="Button">
+        <Parent guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="MyMenuGroup" />
+        <Icon guid="guid_VSCodeIcons_256" id="VscAccount" />
+        <Strings>
+          <ButtonText>Invoke ToolbarCommand 2</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="ToolbarCommandId3" priority="0x0100" type="Button">
+        <Parent guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="ToolbarGroup" />
+        <Icon guid="guid_VSCodeIcons_255" id="VscAccount" />
+        <Strings>
+          <ButtonText>Invoke ToolbarCommand 3</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="ToolbarCommandId4" priority="0x0101" type="Button">
+        <Parent guid="guidVSIXLargeBitmapIssuePackageCmdSet" id="ToolbarGroup" />
+        <Icon guid="guid_VSCodeIcons_256" id="VscAccount" />
+        <Strings>
+          <ButtonText>Invoke ToolbarCommand 4</ButtonText>
+        </Strings>
+      </Button>
+      
+      
+    </Buttons>
+
+    <Bitmaps>
+      <Bitmap guid="guid_VSCodeIcons_255" href="Resources\VSCodeIcons255.png" usedList="VscAccount, VscActivateBreakpoints, VscAdd, VscArchive, VscArrowBoth, VscArrowDown, VscArrowLeft, VscArrowRight, VscArrowSmallDown, VscArrowSmallLeft, VscArrowSmallRight, VscArrowSmallUp, VscArrowUp, VscBeaker, VscBellDot, VscBell, VscBold, VscBook, VscBookmark, VscBriefcase, VscBroadcast, VscBrowser, VscBug, VscCalendar, VscCallIncoming, VscCallOutgoing, VscCaseSensitive, VscCheck, VscChecklist, VscChevronDown, VscChevronLeft, VscChevronRight, VscChevronUp, VscChromeClose, VscChromeMaximize, VscChromeMinimize, VscChromeRestore, VscCircleFilled, VscCircleOutline, VscCircleSlash, VscCircuitBoard, VscClearAll, VscClippy, VscCloseAll, VscClose, VscCloudDownload, VscCloudUpload, VscCode, VscCollapseAll, VscColorMode, VscCommentDiscussion, VscComment, VscCompareChanges, VscCreditCard, VscDash, VscDashboard, VscDatabase, VscDebugAlt2, VscDebugAlt, VscDebugBreakpointConditionalUnverified, VscDebugBreakpointConditional, VscDebugBreakpointDataUnverified, VscDebugBreakpointData, VscDebugBreakpointFunctionUnverified, VscDebugBreakpointFunction, VscDebugBreakpointLogUnverified, VscDebugBreakpointLog, VscDebugBreakpointUnsupported, VscDebugConsole, VscDebugContinue, VscDebugDisconnect, VscDebugPause, VscDebugRestartFrame, VscDebugRestart, VscDebugReverseContinue, VscDebugStackframeActive, VscDebugStackframeDot, VscDebugStackframe, VscDebugStart, VscDebugStepBack, VscDebugStepInto, VscDebugStepOut, VscDebugStepOver, VscDebugStop, VscDebug, VscDesktopDownload, VscDeviceCameraVideo, VscDeviceCamera, VscDeviceMobile, VscDiffAdded, VscDiffIgnored, VscDiffModified, VscDiffRemoved, VscDiffRenamed, VscDiff, VscDiscard, VscEdit, VscEditorLayout, VscEllipsis, VscEmptyWindow, VscError, VscExclude, VscExpandAll, VscExtensions, VscEyeClosed, VscEye, VscFeedback, VscFileBinary, VscFileCode, VscFileMedia, VscFilePdf, VscFileSubmodule, VscFileSymlinkDirectory, VscFileSymlinkFile, VscFileZip, VscFile, VscFiles, VscFilter, VscFlame, VscFoldDown, VscFoldUp, VscFold, VscFolderActive, VscFolderOpened, VscFolder, VscGear, VscGift, VscGistSecret, VscGist, VscGitCommit, VscGitCompare, VscGitMerge, VscGitPullRequest, VscGithubAction, VscGithubAlt, VscGithubInverted, VscGithub, VscGlobe, VscGoToFile, VscGrabber, VscGraph, VscGripper, VscGroupByRefType, VscHeart, VscHistory, VscHome, VscHorizontalRule, VscHubot, VscInbox, VscInfo, VscIssueClosed, VscIssueReopened, VscIssues, VscItalic, VscJersey, VscJson, VscKebabVertical, VscKey, VscLaw, VscLibrary, VscLightbulbAutofix, VscLightbulb, VscLinkExternal, VscLink, VscListFilter, VscListFlat, VscListOrdered, VscListSelection, VscListTree, VscListUnordered, VscLiveShare, VscLoading, VscLocation, VscLock, VscMailRead, VscMail, VscMarkdown, VscMegaphone, VscMention, VscMenu, VscMilestone, VscMirror, VscMortarBoard, VscMove, VscMultipleWindows, VscMute, VscNewFile, VscNewFolder, VscNoNewline, VscNote, VscOctoface, VscOpenPreview, VscOrganization, VscOutput, VscPackage, VscPaintcan, VscPerson, VscPin, VscPinned, VscPlay, VscPlug, VscPreserveCase, VscPreview, VscPrimitiveSquare, VscProject, VscPulse, VscQuestion, VscQuote, VscRadioTower, VscReactions, VscRecordKeys, VscReferences, VscRefresh, VscRegex, VscRemoteExplorer, VscRemote, VscRemove, VscReplaceAll, VscReplace, VscReply, VscRepoClone, VscRepoForcePush, VscRepoForked, VscRepoPull, VscRepoPush, VscRepo, VscReport, VscRequestChanges, VscRocket, VscRootFolderOpened, VscRootFolder, VscRss, VscRuby, VscRunAll, VscSaveAll, VscSaveAs, VscSave, VscScreenFull, VscScreenNormal, VscSearchStop, VscSearch, VscServerEnvironment, VscServerProcess, VscServer, VscSettingsGear, VscSettings, VscShield, VscSignIn, VscSignOut, VscSmiley, VscSortPrecedence, VscSourceControl, VscSplitHorizontal, VscSplitVertical, VscSquirrel" />
+      <Bitmap guid="guid_VSCodeIcons_256" href="Resources\VSCodeIcons256.png" usedList="VscAccount, VscActivateBreakpoints, VscAdd, VscArchive, VscArrowBoth, VscArrowDown, VscArrowLeft, VscArrowRight, VscArrowSmallDown, VscArrowSmallLeft, VscArrowSmallRight, VscArrowSmallUp, VscArrowUp, VscBeaker, VscBellDot, VscBell, VscBold, VscBook, VscBookmark, VscBriefcase, VscBroadcast, VscBrowser, VscBug, VscCalendar, VscCallIncoming, VscCallOutgoing, VscCaseSensitive, VscCheck, VscChecklist, VscChevronDown, VscChevronLeft, VscChevronRight, VscChevronUp, VscChromeClose, VscChromeMaximize, VscChromeMinimize, VscChromeRestore, VscCircleFilled, VscCircleOutline, VscCircleSlash, VscCircuitBoard, VscClearAll, VscClippy, VscCloseAll, VscClose, VscCloudDownload, VscCloudUpload, VscCode, VscCollapseAll, VscColorMode, VscCommentDiscussion, VscComment, VscCompareChanges, VscCreditCard, VscDash, VscDashboard, VscDatabase, VscDebugAlt2, VscDebugAlt, VscDebugBreakpointConditionalUnverified, VscDebugBreakpointConditional, VscDebugBreakpointDataUnverified, VscDebugBreakpointData, VscDebugBreakpointFunctionUnverified, VscDebugBreakpointFunction, VscDebugBreakpointLogUnverified, VscDebugBreakpointLog, VscDebugBreakpointUnsupported, VscDebugConsole, VscDebugContinue, VscDebugDisconnect, VscDebugPause, VscDebugRestartFrame, VscDebugRestart, VscDebugReverseContinue, VscDebugStackframeActive, VscDebugStackframeDot, VscDebugStackframe, VscDebugStart, VscDebugStepBack, VscDebugStepInto, VscDebugStepOut, VscDebugStepOver, VscDebugStop, VscDebug, VscDesktopDownload, VscDeviceCameraVideo, VscDeviceCamera, VscDeviceMobile, VscDiffAdded, VscDiffIgnored, VscDiffModified, VscDiffRemoved, VscDiffRenamed, VscDiff, VscDiscard, VscEdit, VscEditorLayout, VscEllipsis, VscEmptyWindow, VscError, VscExclude, VscExpandAll, VscExtensions, VscEyeClosed, VscEye, VscFeedback, VscFileBinary, VscFileCode, VscFileMedia, VscFilePdf, VscFileSubmodule, VscFileSymlinkDirectory, VscFileSymlinkFile, VscFileZip, VscFile, VscFiles, VscFilter, VscFlame, VscFoldDown, VscFoldUp, VscFold, VscFolderActive, VscFolderOpened, VscFolder, VscGear, VscGift, VscGistSecret, VscGist, VscGitCommit, VscGitCompare, VscGitMerge, VscGitPullRequest, VscGithubAction, VscGithubAlt, VscGithubInverted, VscGithub, VscGlobe, VscGoToFile, VscGrabber, VscGraph, VscGripper, VscGroupByRefType, VscHeart, VscHistory, VscHome, VscHorizontalRule, VscHubot, VscInbox, VscInfo, VscIssueClosed, VscIssueReopened, VscIssues, VscItalic, VscJersey, VscJson, VscKebabVertical, VscKey, VscLaw, VscLibrary, VscLightbulbAutofix, VscLightbulb, VscLinkExternal, VscLink, VscListFilter, VscListFlat, VscListOrdered, VscListSelection, VscListTree, VscListUnordered, VscLiveShare, VscLoading, VscLocation, VscLock, VscMailRead, VscMail, VscMarkdown, VscMegaphone, VscMention, VscMenu, VscMilestone, VscMirror, VscMortarBoard, VscMove, VscMultipleWindows, VscMute, VscNewFile, VscNewFolder, VscNoNewline, VscNote, VscOctoface, VscOpenPreview, VscOrganization, VscOutput, VscPackage, VscPaintcan, VscPerson, VscPin, VscPinned, VscPlay, VscPlug, VscPreserveCase, VscPreview, VscPrimitiveSquare, VscProject, VscPulse, VscQuestion, VscQuote, VscRadioTower, VscReactions, VscRecordKeys, VscReferences, VscRefresh, VscRegex, VscRemoteExplorer, VscRemote, VscRemove, VscReplaceAll, VscReplace, VscReply, VscRepoClone, VscRepoForcePush, VscRepoForked, VscRepoPull, VscRepoPush, VscRepo, VscReport, VscRequestChanges, VscRocket, VscRootFolderOpened, VscRootFolder, VscRss, VscRuby, VscRunAll, VscSaveAll, VscSaveAs, VscSave, VscScreenFull, VscScreenNormal, VscSearchStop, VscSearch, VscServerEnvironment, VscServerProcess, VscServer, VscSettingsGear, VscSettings, VscShield, VscSignIn, VscSignOut, VscSmiley, VscSortPrecedence, VscSourceControl, VscSplitHorizontal, VscSplitVertical, VscSquirrel, Extra" />
+
+    </Bitmaps>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="guidVSIXLargeBitmapIssuePackage" value="{30db668c-ac23-4c3d-a617-bc65a46d36da}" />
+
+    <GuidSymbol name="guidVSIXLargeBitmapIssuePackageCmdSet" value="{166daa18-1564-4885-9a84-e66ec7b05eb0}">
+      <IDSymbol name="MyMenuGroup" value="0x1020" />
+      <IDSymbol name="Toolbar" value="0x1021" />
+      <IDSymbol name="ToolbarGroup" value="0x1022" />
+      <IDSymbol name="ToolbarCommandId" value="0x0101" />
+      <IDSymbol name="ToolbarCommandId2" value="0x0102" />
+      <IDSymbol name="ToolbarCommandId3" value="0x0103" />
+      <IDSymbol name="ToolbarCommandId4" value="0x0104" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guid_VSCodeIcons_255" value="{2e6fa379-5cf7-47bf-85af-4616c4a7d7bf}">
+      <IDSymbol name="VscAccount" value="1" />
+      <IDSymbol name="VscActivateBreakpoints" value="2" />
+      <IDSymbol name="VscAdd" value="3" />
+      <IDSymbol name="VscArchive" value="4" />
+      <IDSymbol name="VscArrowBoth" value="5" />
+      <IDSymbol name="VscArrowDown" value="6" />
+      <IDSymbol name="VscArrowLeft" value="7" />
+      <IDSymbol name="VscArrowRight" value="8" />
+      <IDSymbol name="VscArrowSmallDown" value="9" />
+      <IDSymbol name="VscArrowSmallLeft" value="10" />
+      <IDSymbol name="VscArrowSmallRight" value="11" />
+      <IDSymbol name="VscArrowSmallUp" value="12" />
+      <IDSymbol name="VscArrowUp" value="13" />
+      <IDSymbol name="VscBeaker" value="14" />
+      <IDSymbol name="VscBellDot" value="15" />
+      <IDSymbol name="VscBell" value="16" />
+      <IDSymbol name="VscBold" value="17" />
+      <IDSymbol name="VscBook" value="18" />
+      <IDSymbol name="VscBookmark" value="19" />
+      <IDSymbol name="VscBriefcase" value="20" />
+      <IDSymbol name="VscBroadcast" value="21" />
+      <IDSymbol name="VscBrowser" value="22" />
+      <IDSymbol name="VscBug" value="23" />
+      <IDSymbol name="VscCalendar" value="24" />
+      <IDSymbol name="VscCallIncoming" value="25" />
+      <IDSymbol name="VscCallOutgoing" value="26" />
+      <IDSymbol name="VscCaseSensitive" value="27" />
+      <IDSymbol name="VscCheck" value="28" />
+      <IDSymbol name="VscChecklist" value="29" />
+      <IDSymbol name="VscChevronDown" value="30" />
+      <IDSymbol name="VscChevronLeft" value="31" />
+      <IDSymbol name="VscChevronRight" value="32" />
+      <IDSymbol name="VscChevronUp" value="33" />
+      <IDSymbol name="VscChromeClose" value="34" />
+      <IDSymbol name="VscChromeMaximize" value="35" />
+      <IDSymbol name="VscChromeMinimize" value="36" />
+      <IDSymbol name="VscChromeRestore" value="37" />
+      <IDSymbol name="VscCircleFilled" value="38" />
+      <IDSymbol name="VscCircleOutline" value="39" />
+      <IDSymbol name="VscCircleSlash" value="40" />
+      <IDSymbol name="VscCircuitBoard" value="41" />
+      <IDSymbol name="VscClearAll" value="42" />
+      <IDSymbol name="VscClippy" value="43" />
+      <IDSymbol name="VscCloseAll" value="44" />
+      <IDSymbol name="VscClose" value="45" />
+      <IDSymbol name="VscCloudDownload" value="46" />
+      <IDSymbol name="VscCloudUpload" value="47" />
+      <IDSymbol name="VscCode" value="48" />
+      <IDSymbol name="VscCollapseAll" value="49" />
+      <IDSymbol name="VscColorMode" value="50" />
+      <IDSymbol name="VscCommentDiscussion" value="51" />
+      <IDSymbol name="VscComment" value="52" />
+      <IDSymbol name="VscCompareChanges" value="53" />
+      <IDSymbol name="VscCreditCard" value="54" />
+      <IDSymbol name="VscDash" value="55" />
+      <IDSymbol name="VscDashboard" value="56" />
+      <IDSymbol name="VscDatabase" value="57" />
+      <IDSymbol name="VscDebugAlt2" value="58" />
+      <IDSymbol name="VscDebugAlt" value="59" />
+      <IDSymbol name="VscDebugBreakpointConditionalUnverified" value="60" />
+      <IDSymbol name="VscDebugBreakpointConditional" value="61" />
+      <IDSymbol name="VscDebugBreakpointDataUnverified" value="62" />
+      <IDSymbol name="VscDebugBreakpointData" value="63" />
+      <IDSymbol name="VscDebugBreakpointFunctionUnverified" value="64" />
+      <IDSymbol name="VscDebugBreakpointFunction" value="65" />
+      <IDSymbol name="VscDebugBreakpointLogUnverified" value="66" />
+      <IDSymbol name="VscDebugBreakpointLog" value="67" />
+      <IDSymbol name="VscDebugBreakpointUnsupported" value="68" />
+      <IDSymbol name="VscDebugConsole" value="69" />
+      <IDSymbol name="VscDebugContinue" value="70" />
+      <IDSymbol name="VscDebugDisconnect" value="71" />
+      <IDSymbol name="VscDebugPause" value="72" />
+      <IDSymbol name="VscDebugRestartFrame" value="73" />
+      <IDSymbol name="VscDebugRestart" value="74" />
+      <IDSymbol name="VscDebugReverseContinue" value="75" />
+      <IDSymbol name="VscDebugStackframeActive" value="76" />
+      <IDSymbol name="VscDebugStackframeDot" value="77" />
+      <IDSymbol name="VscDebugStackframe" value="78" />
+      <IDSymbol name="VscDebugStart" value="79" />
+      <IDSymbol name="VscDebugStepBack" value="80" />
+      <IDSymbol name="VscDebugStepInto" value="81" />
+      <IDSymbol name="VscDebugStepOut" value="82" />
+      <IDSymbol name="VscDebugStepOver" value="83" />
+      <IDSymbol name="VscDebugStop" value="84" />
+      <IDSymbol name="VscDebug" value="85" />
+      <IDSymbol name="VscDesktopDownload" value="86" />
+      <IDSymbol name="VscDeviceCameraVideo" value="87" />
+      <IDSymbol name="VscDeviceCamera" value="88" />
+      <IDSymbol name="VscDeviceMobile" value="89" />
+      <IDSymbol name="VscDiffAdded" value="90" />
+      <IDSymbol name="VscDiffIgnored" value="91" />
+      <IDSymbol name="VscDiffModified" value="92" />
+      <IDSymbol name="VscDiffRemoved" value="93" />
+      <IDSymbol name="VscDiffRenamed" value="94" />
+      <IDSymbol name="VscDiff" value="95" />
+      <IDSymbol name="VscDiscard" value="96" />
+      <IDSymbol name="VscEdit" value="97" />
+      <IDSymbol name="VscEditorLayout" value="98" />
+      <IDSymbol name="VscEllipsis" value="99" />
+      <IDSymbol name="VscEmptyWindow" value="100" />
+      <IDSymbol name="VscError" value="101" />
+      <IDSymbol name="VscExclude" value="102" />
+      <IDSymbol name="VscExpandAll" value="103" />
+      <IDSymbol name="VscExtensions" value="104" />
+      <IDSymbol name="VscEyeClosed" value="105" />
+      <IDSymbol name="VscEye" value="106" />
+      <IDSymbol name="VscFeedback" value="107" />
+      <IDSymbol name="VscFileBinary" value="108" />
+      <IDSymbol name="VscFileCode" value="109" />
+      <IDSymbol name="VscFileMedia" value="110" />
+      <IDSymbol name="VscFilePdf" value="111" />
+      <IDSymbol name="VscFileSubmodule" value="112" />
+      <IDSymbol name="VscFileSymlinkDirectory" value="113" />
+      <IDSymbol name="VscFileSymlinkFile" value="114" />
+      <IDSymbol name="VscFileZip" value="115" />
+      <IDSymbol name="VscFile" value="116" />
+      <IDSymbol name="VscFiles" value="117" />
+      <IDSymbol name="VscFilter" value="118" />
+      <IDSymbol name="VscFlame" value="119" />
+      <IDSymbol name="VscFoldDown" value="120" />
+      <IDSymbol name="VscFoldUp" value="121" />
+      <IDSymbol name="VscFold" value="122" />
+      <IDSymbol name="VscFolderActive" value="123" />
+      <IDSymbol name="VscFolderOpened" value="124" />
+      <IDSymbol name="VscFolder" value="125" />
+      <IDSymbol name="VscGear" value="126" />
+      <IDSymbol name="VscGift" value="127" />
+      <IDSymbol name="VscGistSecret" value="128" />
+      <IDSymbol name="VscGist" value="129" />
+      <IDSymbol name="VscGitCommit" value="130" />
+      <IDSymbol name="VscGitCompare" value="131" />
+      <IDSymbol name="VscGitMerge" value="132" />
+      <IDSymbol name="VscGitPullRequest" value="133" />
+      <IDSymbol name="VscGithubAction" value="134" />
+      <IDSymbol name="VscGithubAlt" value="135" />
+      <IDSymbol name="VscGithubInverted" value="136" />
+      <IDSymbol name="VscGithub" value="137" />
+      <IDSymbol name="VscGlobe" value="138" />
+      <IDSymbol name="VscGoToFile" value="139" />
+      <IDSymbol name="VscGrabber" value="140" />
+      <IDSymbol name="VscGraph" value="141" />
+      <IDSymbol name="VscGripper" value="142" />
+      <IDSymbol name="VscGroupByRefType" value="143" />
+      <IDSymbol name="VscHeart" value="144" />
+      <IDSymbol name="VscHistory" value="145" />
+      <IDSymbol name="VscHome" value="146" />
+      <IDSymbol name="VscHorizontalRule" value="147" />
+      <IDSymbol name="VscHubot" value="148" />
+      <IDSymbol name="VscInbox" value="149" />
+      <IDSymbol name="VscInfo" value="150" />
+      <IDSymbol name="VscIssueClosed" value="151" />
+      <IDSymbol name="VscIssueReopened" value="152" />
+      <IDSymbol name="VscIssues" value="153" />
+      <IDSymbol name="VscItalic" value="154" />
+      <IDSymbol name="VscJersey" value="155" />
+      <IDSymbol name="VscJson" value="156" />
+      <IDSymbol name="VscKebabVertical" value="157" />
+      <IDSymbol name="VscKey" value="158" />
+      <IDSymbol name="VscLaw" value="159" />
+      <IDSymbol name="VscLibrary" value="160" />
+      <IDSymbol name="VscLightbulbAutofix" value="161" />
+      <IDSymbol name="VscLightbulb" value="162" />
+      <IDSymbol name="VscLinkExternal" value="163" />
+      <IDSymbol name="VscLink" value="164" />
+      <IDSymbol name="VscListFilter" value="165" />
+      <IDSymbol name="VscListFlat" value="166" />
+      <IDSymbol name="VscListOrdered" value="167" />
+      <IDSymbol name="VscListSelection" value="168" />
+      <IDSymbol name="VscListTree" value="169" />
+      <IDSymbol name="VscListUnordered" value="170" />
+      <IDSymbol name="VscLiveShare" value="171" />
+      <IDSymbol name="VscLoading" value="172" />
+      <IDSymbol name="VscLocation" value="173" />
+      <IDSymbol name="VscLock" value="174" />
+      <IDSymbol name="VscMailRead" value="175" />
+      <IDSymbol name="VscMail" value="176" />
+      <IDSymbol name="VscMarkdown" value="177" />
+      <IDSymbol name="VscMegaphone" value="178" />
+      <IDSymbol name="VscMention" value="179" />
+      <IDSymbol name="VscMenu" value="180" />
+      <IDSymbol name="VscMilestone" value="181" />
+      <IDSymbol name="VscMirror" value="182" />
+      <IDSymbol name="VscMortarBoard" value="183" />
+      <IDSymbol name="VscMove" value="184" />
+      <IDSymbol name="VscMultipleWindows" value="185" />
+      <IDSymbol name="VscMute" value="186" />
+      <IDSymbol name="VscNewFile" value="187" />
+      <IDSymbol name="VscNewFolder" value="188" />
+      <IDSymbol name="VscNoNewline" value="189" />
+      <IDSymbol name="VscNote" value="190" />
+      <IDSymbol name="VscOctoface" value="191" />
+      <IDSymbol name="VscOpenPreview" value="192" />
+      <IDSymbol name="VscOrganization" value="193" />
+      <IDSymbol name="VscOutput" value="194" />
+      <IDSymbol name="VscPackage" value="195" />
+      <IDSymbol name="VscPaintcan" value="196" />
+      <IDSymbol name="VscPerson" value="197" />
+      <IDSymbol name="VscPin" value="198" />
+      <IDSymbol name="VscPinned" value="199" />
+      <IDSymbol name="VscPlay" value="200" />
+      <IDSymbol name="VscPlug" value="201" />
+      <IDSymbol name="VscPreserveCase" value="202" />
+      <IDSymbol name="VscPreview" value="203" />
+      <IDSymbol name="VscPrimitiveSquare" value="204" />
+      <IDSymbol name="VscProject" value="205" />
+      <IDSymbol name="VscPulse" value="206" />
+      <IDSymbol name="VscQuestion" value="207" />
+      <IDSymbol name="VscQuote" value="208" />
+      <IDSymbol name="VscRadioTower" value="209" />
+      <IDSymbol name="VscReactions" value="210" />
+      <IDSymbol name="VscRecordKeys" value="211" />
+      <IDSymbol name="VscReferences" value="212" />
+      <IDSymbol name="VscRefresh" value="213" />
+      <IDSymbol name="VscRegex" value="214" />
+      <IDSymbol name="VscRemoteExplorer" value="215" />
+      <IDSymbol name="VscRemote" value="216" />
+      <IDSymbol name="VscRemove" value="217" />
+      <IDSymbol name="VscReplaceAll" value="218" />
+      <IDSymbol name="VscReplace" value="219" />
+      <IDSymbol name="VscReply" value="220" />
+      <IDSymbol name="VscRepoClone" value="221" />
+      <IDSymbol name="VscRepoForcePush" value="222" />
+      <IDSymbol name="VscRepoForked" value="223" />
+      <IDSymbol name="VscRepoPull" value="224" />
+      <IDSymbol name="VscRepoPush" value="225" />
+      <IDSymbol name="VscRepo" value="226" />
+      <IDSymbol name="VscReport" value="227" />
+      <IDSymbol name="VscRequestChanges" value="228" />
+      <IDSymbol name="VscRocket" value="229" />
+      <IDSymbol name="VscRootFolderOpened" value="230" />
+      <IDSymbol name="VscRootFolder" value="231" />
+      <IDSymbol name="VscRss" value="232" />
+      <IDSymbol name="VscRuby" value="233" />
+      <IDSymbol name="VscRunAll" value="234" />
+      <IDSymbol name="VscSaveAll" value="235" />
+      <IDSymbol name="VscSaveAs" value="236" />
+      <IDSymbol name="VscSave" value="237" />
+      <IDSymbol name="VscScreenFull" value="238" />
+      <IDSymbol name="VscScreenNormal" value="239" />
+      <IDSymbol name="VscSearchStop" value="240" />
+      <IDSymbol name="VscSearch" value="241" />
+      <IDSymbol name="VscServerEnvironment" value="242" />
+      <IDSymbol name="VscServerProcess" value="243" />
+      <IDSymbol name="VscServer" value="244" />
+      <IDSymbol name="VscSettingsGear" value="245" />
+      <IDSymbol name="VscSettings" value="246" />
+      <IDSymbol name="VscShield" value="247" />
+      <IDSymbol name="VscSignIn" value="248" />
+      <IDSymbol name="VscSignOut" value="249" />
+      <IDSymbol name="VscSmiley" value="250" />
+      <IDSymbol name="VscSortPrecedence" value="251" />
+      <IDSymbol name="VscSourceControl" value="252" />
+      <IDSymbol name="VscSplitHorizontal" value="253" />
+      <IDSymbol name="VscSplitVertical" value="254" />
+      <IDSymbol name="VscSquirrel" value="255" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guid_VSCodeIcons_256" value="{241A0B36-04C0-40B0-95CE-D68BDDC87E5D}">
+      <IDSymbol name="VscAccount" value="1" />
+      <IDSymbol name="VscActivateBreakpoints" value="2" />
+      <IDSymbol name="VscAdd" value="3" />
+      <IDSymbol name="VscArchive" value="4" />
+      <IDSymbol name="VscArrowBoth" value="5" />
+      <IDSymbol name="VscArrowDown" value="6" />
+      <IDSymbol name="VscArrowLeft" value="7" />
+      <IDSymbol name="VscArrowRight" value="8" />
+      <IDSymbol name="VscArrowSmallDown" value="9" />
+      <IDSymbol name="VscArrowSmallLeft" value="10" />
+      <IDSymbol name="VscArrowSmallRight" value="11" />
+      <IDSymbol name="VscArrowSmallUp" value="12" />
+      <IDSymbol name="VscArrowUp" value="13" />
+      <IDSymbol name="VscBeaker" value="14" />
+      <IDSymbol name="VscBellDot" value="15" />
+      <IDSymbol name="VscBell" value="16" />
+      <IDSymbol name="VscBold" value="17" />
+      <IDSymbol name="VscBook" value="18" />
+      <IDSymbol name="VscBookmark" value="19" />
+      <IDSymbol name="VscBriefcase" value="20" />
+      <IDSymbol name="VscBroadcast" value="21" />
+      <IDSymbol name="VscBrowser" value="22" />
+      <IDSymbol name="VscBug" value="23" />
+      <IDSymbol name="VscCalendar" value="24" />
+      <IDSymbol name="VscCallIncoming" value="25" />
+      <IDSymbol name="VscCallOutgoing" value="26" />
+      <IDSymbol name="VscCaseSensitive" value="27" />
+      <IDSymbol name="VscCheck" value="28" />
+      <IDSymbol name="VscChecklist" value="29" />
+      <IDSymbol name="VscChevronDown" value="30" />
+      <IDSymbol name="VscChevronLeft" value="31" />
+      <IDSymbol name="VscChevronRight" value="32" />
+      <IDSymbol name="VscChevronUp" value="33" />
+      <IDSymbol name="VscChromeClose" value="34" />
+      <IDSymbol name="VscChromeMaximize" value="35" />
+      <IDSymbol name="VscChromeMinimize" value="36" />
+      <IDSymbol name="VscChromeRestore" value="37" />
+      <IDSymbol name="VscCircleFilled" value="38" />
+      <IDSymbol name="VscCircleOutline" value="39" />
+      <IDSymbol name="VscCircleSlash" value="40" />
+      <IDSymbol name="VscCircuitBoard" value="41" />
+      <IDSymbol name="VscClearAll" value="42" />
+      <IDSymbol name="VscClippy" value="43" />
+      <IDSymbol name="VscCloseAll" value="44" />
+      <IDSymbol name="VscClose" value="45" />
+      <IDSymbol name="VscCloudDownload" value="46" />
+      <IDSymbol name="VscCloudUpload" value="47" />
+      <IDSymbol name="VscCode" value="48" />
+      <IDSymbol name="VscCollapseAll" value="49" />
+      <IDSymbol name="VscColorMode" value="50" />
+      <IDSymbol name="VscCommentDiscussion" value="51" />
+      <IDSymbol name="VscComment" value="52" />
+      <IDSymbol name="VscCompareChanges" value="53" />
+      <IDSymbol name="VscCreditCard" value="54" />
+      <IDSymbol name="VscDash" value="55" />
+      <IDSymbol name="VscDashboard" value="56" />
+      <IDSymbol name="VscDatabase" value="57" />
+      <IDSymbol name="VscDebugAlt2" value="58" />
+      <IDSymbol name="VscDebugAlt" value="59" />
+      <IDSymbol name="VscDebugBreakpointConditionalUnverified" value="60" />
+      <IDSymbol name="VscDebugBreakpointConditional" value="61" />
+      <IDSymbol name="VscDebugBreakpointDataUnverified" value="62" />
+      <IDSymbol name="VscDebugBreakpointData" value="63" />
+      <IDSymbol name="VscDebugBreakpointFunctionUnverified" value="64" />
+      <IDSymbol name="VscDebugBreakpointFunction" value="65" />
+      <IDSymbol name="VscDebugBreakpointLogUnverified" value="66" />
+      <IDSymbol name="VscDebugBreakpointLog" value="67" />
+      <IDSymbol name="VscDebugBreakpointUnsupported" value="68" />
+      <IDSymbol name="VscDebugConsole" value="69" />
+      <IDSymbol name="VscDebugContinue" value="70" />
+      <IDSymbol name="VscDebugDisconnect" value="71" />
+      <IDSymbol name="VscDebugPause" value="72" />
+      <IDSymbol name="VscDebugRestartFrame" value="73" />
+      <IDSymbol name="VscDebugRestart" value="74" />
+      <IDSymbol name="VscDebugReverseContinue" value="75" />
+      <IDSymbol name="VscDebugStackframeActive" value="76" />
+      <IDSymbol name="VscDebugStackframeDot" value="77" />
+      <IDSymbol name="VscDebugStackframe" value="78" />
+      <IDSymbol name="VscDebugStart" value="79" />
+      <IDSymbol name="VscDebugStepBack" value="80" />
+      <IDSymbol name="VscDebugStepInto" value="81" />
+      <IDSymbol name="VscDebugStepOut" value="82" />
+      <IDSymbol name="VscDebugStepOver" value="83" />
+      <IDSymbol name="VscDebugStop" value="84" />
+      <IDSymbol name="VscDebug" value="85" />
+      <IDSymbol name="VscDesktopDownload" value="86" />
+      <IDSymbol name="VscDeviceCameraVideo" value="87" />
+      <IDSymbol name="VscDeviceCamera" value="88" />
+      <IDSymbol name="VscDeviceMobile" value="89" />
+      <IDSymbol name="VscDiffAdded" value="90" />
+      <IDSymbol name="VscDiffIgnored" value="91" />
+      <IDSymbol name="VscDiffModified" value="92" />
+      <IDSymbol name="VscDiffRemoved" value="93" />
+      <IDSymbol name="VscDiffRenamed" value="94" />
+      <IDSymbol name="VscDiff" value="95" />
+      <IDSymbol name="VscDiscard" value="96" />
+      <IDSymbol name="VscEdit" value="97" />
+      <IDSymbol name="VscEditorLayout" value="98" />
+      <IDSymbol name="VscEllipsis" value="99" />
+      <IDSymbol name="VscEmptyWindow" value="100" />
+      <IDSymbol name="VscError" value="101" />
+      <IDSymbol name="VscExclude" value="102" />
+      <IDSymbol name="VscExpandAll" value="103" />
+      <IDSymbol name="VscExtensions" value="104" />
+      <IDSymbol name="VscEyeClosed" value="105" />
+      <IDSymbol name="VscEye" value="106" />
+      <IDSymbol name="VscFeedback" value="107" />
+      <IDSymbol name="VscFileBinary" value="108" />
+      <IDSymbol name="VscFileCode" value="109" />
+      <IDSymbol name="VscFileMedia" value="110" />
+      <IDSymbol name="VscFilePdf" value="111" />
+      <IDSymbol name="VscFileSubmodule" value="112" />
+      <IDSymbol name="VscFileSymlinkDirectory" value="113" />
+      <IDSymbol name="VscFileSymlinkFile" value="114" />
+      <IDSymbol name="VscFileZip" value="115" />
+      <IDSymbol name="VscFile" value="116" />
+      <IDSymbol name="VscFiles" value="117" />
+      <IDSymbol name="VscFilter" value="118" />
+      <IDSymbol name="VscFlame" value="119" />
+      <IDSymbol name="VscFoldDown" value="120" />
+      <IDSymbol name="VscFoldUp" value="121" />
+      <IDSymbol name="VscFold" value="122" />
+      <IDSymbol name="VscFolderActive" value="123" />
+      <IDSymbol name="VscFolderOpened" value="124" />
+      <IDSymbol name="VscFolder" value="125" />
+      <IDSymbol name="VscGear" value="126" />
+      <IDSymbol name="VscGift" value="127" />
+      <IDSymbol name="VscGistSecret" value="128" />
+      <IDSymbol name="VscGist" value="129" />
+      <IDSymbol name="VscGitCommit" value="130" />
+      <IDSymbol name="VscGitCompare" value="131" />
+      <IDSymbol name="VscGitMerge" value="132" />
+      <IDSymbol name="VscGitPullRequest" value="133" />
+      <IDSymbol name="VscGithubAction" value="134" />
+      <IDSymbol name="VscGithubAlt" value="135" />
+      <IDSymbol name="VscGithubInverted" value="136" />
+      <IDSymbol name="VscGithub" value="137" />
+      <IDSymbol name="VscGlobe" value="138" />
+      <IDSymbol name="VscGoToFile" value="139" />
+      <IDSymbol name="VscGrabber" value="140" />
+      <IDSymbol name="VscGraph" value="141" />
+      <IDSymbol name="VscGripper" value="142" />
+      <IDSymbol name="VscGroupByRefType" value="143" />
+      <IDSymbol name="VscHeart" value="144" />
+      <IDSymbol name="VscHistory" value="145" />
+      <IDSymbol name="VscHome" value="146" />
+      <IDSymbol name="VscHorizontalRule" value="147" />
+      <IDSymbol name="VscHubot" value="148" />
+      <IDSymbol name="VscInbox" value="149" />
+      <IDSymbol name="VscInfo" value="150" />
+      <IDSymbol name="VscIssueClosed" value="151" />
+      <IDSymbol name="VscIssueReopened" value="152" />
+      <IDSymbol name="VscIssues" value="153" />
+      <IDSymbol name="VscItalic" value="154" />
+      <IDSymbol name="VscJersey" value="155" />
+      <IDSymbol name="VscJson" value="156" />
+      <IDSymbol name="VscKebabVertical" value="157" />
+      <IDSymbol name="VscKey" value="158" />
+      <IDSymbol name="VscLaw" value="159" />
+      <IDSymbol name="VscLibrary" value="160" />
+      <IDSymbol name="VscLightbulbAutofix" value="161" />
+      <IDSymbol name="VscLightbulb" value="162" />
+      <IDSymbol name="VscLinkExternal" value="163" />
+      <IDSymbol name="VscLink" value="164" />
+      <IDSymbol name="VscListFilter" value="165" />
+      <IDSymbol name="VscListFlat" value="166" />
+      <IDSymbol name="VscListOrdered" value="167" />
+      <IDSymbol name="VscListSelection" value="168" />
+      <IDSymbol name="VscListTree" value="169" />
+      <IDSymbol name="VscListUnordered" value="170" />
+      <IDSymbol name="VscLiveShare" value="171" />
+      <IDSymbol name="VscLoading" value="172" />
+      <IDSymbol name="VscLocation" value="173" />
+      <IDSymbol name="VscLock" value="174" />
+      <IDSymbol name="VscMailRead" value="175" />
+      <IDSymbol name="VscMail" value="176" />
+      <IDSymbol name="VscMarkdown" value="177" />
+      <IDSymbol name="VscMegaphone" value="178" />
+      <IDSymbol name="VscMention" value="179" />
+      <IDSymbol name="VscMenu" value="180" />
+      <IDSymbol name="VscMilestone" value="181" />
+      <IDSymbol name="VscMirror" value="182" />
+      <IDSymbol name="VscMortarBoard" value="183" />
+      <IDSymbol name="VscMove" value="184" />
+      <IDSymbol name="VscMultipleWindows" value="185" />
+      <IDSymbol name="VscMute" value="186" />
+      <IDSymbol name="VscNewFile" value="187" />
+      <IDSymbol name="VscNewFolder" value="188" />
+      <IDSymbol name="VscNoNewline" value="189" />
+      <IDSymbol name="VscNote" value="190" />
+      <IDSymbol name="VscOctoface" value="191" />
+      <IDSymbol name="VscOpenPreview" value="192" />
+      <IDSymbol name="VscOrganization" value="193" />
+      <IDSymbol name="VscOutput" value="194" />
+      <IDSymbol name="VscPackage" value="195" />
+      <IDSymbol name="VscPaintcan" value="196" />
+      <IDSymbol name="VscPerson" value="197" />
+      <IDSymbol name="VscPin" value="198" />
+      <IDSymbol name="VscPinned" value="199" />
+      <IDSymbol name="VscPlay" value="200" />
+      <IDSymbol name="VscPlug" value="201" />
+      <IDSymbol name="VscPreserveCase" value="202" />
+      <IDSymbol name="VscPreview" value="203" />
+      <IDSymbol name="VscPrimitiveSquare" value="204" />
+      <IDSymbol name="VscProject" value="205" />
+      <IDSymbol name="VscPulse" value="206" />
+      <IDSymbol name="VscQuestion" value="207" />
+      <IDSymbol name="VscQuote" value="208" />
+      <IDSymbol name="VscRadioTower" value="209" />
+      <IDSymbol name="VscReactions" value="210" />
+      <IDSymbol name="VscRecordKeys" value="211" />
+      <IDSymbol name="VscReferences" value="212" />
+      <IDSymbol name="VscRefresh" value="213" />
+      <IDSymbol name="VscRegex" value="214" />
+      <IDSymbol name="VscRemoteExplorer" value="215" />
+      <IDSymbol name="VscRemote" value="216" />
+      <IDSymbol name="VscRemove" value="217" />
+      <IDSymbol name="VscReplaceAll" value="218" />
+      <IDSymbol name="VscReplace" value="219" />
+      <IDSymbol name="VscReply" value="220" />
+      <IDSymbol name="VscRepoClone" value="221" />
+      <IDSymbol name="VscRepoForcePush" value="222" />
+      <IDSymbol name="VscRepoForked" value="223" />
+      <IDSymbol name="VscRepoPull" value="224" />
+      <IDSymbol name="VscRepoPush" value="225" />
+      <IDSymbol name="VscRepo" value="226" />
+      <IDSymbol name="VscReport" value="227" />
+      <IDSymbol name="VscRequestChanges" value="228" />
+      <IDSymbol name="VscRocket" value="229" />
+      <IDSymbol name="VscRootFolderOpened" value="230" />
+      <IDSymbol name="VscRootFolder" value="231" />
+      <IDSymbol name="VscRss" value="232" />
+      <IDSymbol name="VscRuby" value="233" />
+      <IDSymbol name="VscRunAll" value="234" />
+      <IDSymbol name="VscSaveAll" value="235" />
+      <IDSymbol name="VscSaveAs" value="236" />
+      <IDSymbol name="VscSave" value="237" />
+      <IDSymbol name="VscScreenFull" value="238" />
+      <IDSymbol name="VscScreenNormal" value="239" />
+      <IDSymbol name="VscSearchStop" value="240" />
+      <IDSymbol name="VscSearch" value="241" />
+      <IDSymbol name="VscServerEnvironment" value="242" />
+      <IDSymbol name="VscServerProcess" value="243" />
+      <IDSymbol name="VscServer" value="244" />
+      <IDSymbol name="VscSettingsGear" value="245" />
+      <IDSymbol name="VscSettings" value="246" />
+      <IDSymbol name="VscShield" value="247" />
+      <IDSymbol name="VscSignIn" value="248" />
+      <IDSymbol name="VscSignOut" value="249" />
+      <IDSymbol name="VscSmiley" value="250" />
+      <IDSymbol name="VscSortPrecedence" value="251" />
+      <IDSymbol name="VscSourceControl" value="252" />
+      <IDSymbol name="VscSplitHorizontal" value="253" />
+      <IDSymbol name="VscSplitVertical" value="254" />
+      <IDSymbol name="VscSquirrel" value="255" />
+      <IDSymbol name="Extra" value="256"/>
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
